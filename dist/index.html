@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="safer — Episode I: Price.">
+  <title>safer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main aria-label="safer">
+    <section class="item" data-item="episode">
+      <h1 id="episode-title"><button class="episode-toggle" type="button" aria-controls="episode-video" aria-pressed="false" disabled>Episode I: Price</button></h1>
+      <div class="price-control" aria-labelledby="episode-title">
+        <label class="price-field">
+          <span aria-hidden="true">$</span>
+          <span class="amount-width">
+            <span class="amount-measure" aria-hidden="true">10</span>
+            <input aria-label="Price for Episode I, in dollars" type="text" inputmode="decimal" enterkeyhint="go" autocomplete="off" spellcheck="false" placeholder="10" maxlength="16">
+          </span>
+        </label>
+        <button class="circle" type="button" aria-label="Choose the suggested price for Episode I"><span aria-hidden="true"></span></button>
+      </div>
+      <p class="message" role="status" hidden></p>
+    </section>
+
+    <section class="item" data-item="catalogue">
+      <h2 id="catalogue-title">Catalogue.pdf</h2>
+      <div class="price-control" aria-labelledby="catalogue-title">
+        <label class="price-field">
+          <span aria-hidden="true">$</span>
+          <span class="amount-width">
+            <span class="amount-measure" aria-hidden="true">5</span>
+            <input aria-label="Price for Catalogue.pdf, in dollars" type="text" inputmode="decimal" enterkeyhint="go" autocomplete="off" spellcheck="false" placeholder="5" maxlength="16">
+          </span>
+        </label>
+        <button class="circle" type="button" aria-label="Choose the suggested price for Catalogue.pdf"><span aria-hidden="true"></span></button>
+      </div>
+      <p class="message" role="status" hidden></p>
+    </section>
+
+    <p class="upcoming">Episode II: For All (∀) — Oct. 26, 2026</p>
+    <p class="upcoming">Episode III: Tool — Nov. 8, 2026</p>
+  </main>
+
+  <button class="shared-budget" type="button" disabled aria-label="Shared budget — coming later">∀</button>
+
+  <video id="episode-video" playsinline preload="none" disablepictureinpicture disableremoteplayback tabindex="-1" aria-label="Episode I: Price" hidden>
+    <source src="./assets/episode-i.mp4" type="video/mp4">
+  </video>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
