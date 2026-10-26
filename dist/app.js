@@ -81,7 +81,7 @@ function press(item) {
   item.state = next.state;
   render(item);
   if (next.action === 'open') {
-    // No payment request is made. Persistence is temporarily off for testing.
+    // Remember confirmed amounts in this browser; no payment request is made.
     saved[item.key] = item.state.amount;
     if (settings.rememberSelections) {
       try { localStorage.setItem(storageKey, JSON.stringify(saved)); } catch { /* Selection still works for this visit. */ }
