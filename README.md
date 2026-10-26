@@ -22,6 +22,6 @@ The original video is retained locally. The website uses `dist/assets/episode-i.
 
 ## GitHub Pages
 
-The site is published from `dist/` by `.github/workflows/pages.yml` after changes to `main`. No build or dependency installation is required. The workflow runs the state checks, uploads the static site and deploys it to GitHub Pages.
+After GitHub Pages is enabled, `.github/workflows/pages.yml` publishes `dist/` after changes to `main`. Deployment is skipped while the repository is private. No build or dependency installation is required. The workflow runs the state checks, uploads the static site and deploys it to GitHub Pages.
 
 Edit the HTML, CSS and JavaScript in `dist/`; media is in `dist/assets/`. Set `settings.rememberSelections` in `dist/content.js` to `true` when testing is complete.
