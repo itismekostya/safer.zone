@@ -75,7 +75,7 @@ function press(item) {
     return;
   }
   if (next.action === 'open' && !item.config.url) {
-    showMessage(item, 'Catalogue.pdf has not been added yet.');
+    showMessage(item, 'Catalog.pdf has not been added yet.');
     return;
   }
   item.state = next.state;
@@ -97,7 +97,8 @@ function press(item) {
     } else {
       const link = document.createElement('a');
       link.href = item.config.url;
-      link.download = 'Catalogue.pdf';
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
       link.click();
       item.state = { ...item.state, active: false };
       render(item);

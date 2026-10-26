@@ -16,7 +16,7 @@ After the amount field disappears, the circle's layout height becomes its visibl
 
 This is the requested price-selection prototype. No payment processor is connected and no money is charged. The selected amount is not a completed payment or a secure paywall.
 
-`dist/content.js` configures media. Episode I uses the supplied video, converted to browser-compatible MP4. Catalogue.pdf has not been supplied; confirming its amount reports the missing file and leaves the price control intact, without pretending to download anything. Set its `url` after adding the actual PDF.
+`dist/content.js` configures media. Episode I uses the supplied video, converted to browser-compatible MP4. Catalog.pdf uses the supplied PDF. Confirming its amount opens the document in a new tab; subsequent presses reopen it directly.
 
 The original video is retained locally. The website uses `dist/assets/episode-i.mp4`, H.264/AAC, fast-start, original resolution and frame rate.
 
