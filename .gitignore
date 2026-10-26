@@ -1,0 +1,7 @@
+.DS_Store
+node_modules/
+.openai/.state/
+previews/
+.env
+.env.*
+Episode I.m4v
